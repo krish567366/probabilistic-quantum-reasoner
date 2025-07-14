@@ -1,6 +1,6 @@
 # Probabilistic Quantum Reasoner
 
-[![PyPI version](https://badge.fury.io/py/probabilistic-quantum-reasoner.svg)](https://badge.fury.io/py/probabilistic-quantum-reasoner)
+[![PyPI](https://img.shields.io/pypi/v/probabilistic-quantum-reasoner.svg?label=PyPI&color=blue&logo=python&logoColor=white)](https://pypi.org/project/probabilistic-quantum-reasoner/)
 [![Documentation Status](https://readthedocs.org/projects/probabilistic-quantum-reasoner/badge/?version=latest)](https://krish567366.github.io/probabilistic-quantum-reasoner/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
