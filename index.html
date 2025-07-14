@@ -71,7 +71,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -127,7 +127,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -2050,7 +2050,7 @@
 
 <h1 id="probabilistic-quantum-reasoner">Probabilistic Quantum Reasoner<a class="headerlink" href="#probabilistic-quantum-reasoner" title="Permanent link">&para;</a></h1>
 <p>A production-ready Python library for <strong>quantum-classical hybrid reasoning</strong> that fuses quantum probabilistic graphical models (QPGMs) with classical probabilistic logic for uncertainty-aware AI inference.</p>
-<p><a href="https://badge.fury.io/py/probabilistic-quantum-reasoner"><img alt="PyPI version" src="https://badge.fury.io/py/probabilistic-quantum-reasoner.svg" /></a>
+<p><a href="https://pypi.org/project/probabilistic-quantum-reasoner/"><img alt="PyPI" src="https://img.shields.io/pypi/v/probabilistic-quantum-reasoner.svg?label=PyPI&amp;color=blue&amp;logo=python&amp;logoColor=white" /></a>
 <a href="https://www.python.org/downloads/"><img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10+-blue.svg" /></a>
 <a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
 <a href="https://github.com/quantum-ai/probabilistic-quantum-reasoner/actions"><img alt="Tests" src="https://github.com/quantum-ai/probabilistic-quantum-reasoner/workflows/Tests/badge.svg" /></a></p>
@@ -2081,7 +2081,7 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>probabilistic-quantum-reasoner
 </span></code></pre></div>
 <h3 id="optional-dependencies">Optional Dependencies<a class="headerlink" href="#optional-dependencies" title="Permanent link">&para;</a></h3>
-<p>For quantum hardware backends:
+<p>For quantum hardware backends:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># IBM Quantum (Qiskit)</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>pip<span class="w"> </span>install<span class="w"> </span>probabilistic-quantum-reasoner<span class="o">[</span>qiskit<span class="o">]</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
@@ -2093,7 +2093,7 @@
 </span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
 </span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># Development and testing</span>
 </span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>pip<span class="w"> </span>install<span class="w"> </span>probabilistic-quantum-reasoner<span class="o">[</span>dev<span class="o">]</span>
-</span></code></pre></div></p>
+</span></code></pre></div>
 <h2 id="quick-start">🔧 Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
 <h3 id="basic-quantum-bayesian-network">Basic Quantum Bayesian Network<a class="headerlink" href="#basic-quantum-bayesian-network" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">probabilistic_quantum_reasoner</span><span class="w"> </span><span class="kn">import</span> <span class="n">QuantumBayesianNetwork</span>
@@ -2146,25 +2146,25 @@
 </span></code></pre></div>
 <h2 id="architecture">🏗️ Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
 <p>The library is built with a modular architecture:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>probabilistic_quantum_reasoner/
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>├── core/                   # Core components
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>│   ├── network.py         # QuantumBayesianNetwork
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>│   ├── nodes.py           # Quantum/Classical/Hybrid nodes
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>│   ├── operators.py       # Quantum operators and gates
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>│   └── exceptions.py      # Custom exceptions
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>├── inference/             # Inference algorithms
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>│   ├── engine.py          # Main inference coordinator
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>│   ├── belief_propagation.py  # Quantum belief propagation
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>│   ├── causal.py          # Do-calculus implementation
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>│   └── variational.py     # VQE and QAOA algorithms
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>├── backends/              # Quantum backends
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>│   ├── simulator.py       # Classical simulation
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>│   ├── qiskit_backend.py  # IBM Quantum integration
-</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>│   └── pennylane_backend.py  # PennyLane integration
-</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>└── examples/              # Practical examples
-</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>    ├── weather_mood.py    # Hybrid causal reasoning
-</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>    ├── quantum_xor.py     # Quantum logic reasoning
-</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>    └── prisoners_dilemma.py  # Quantum game theory
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>probabilistic_quantum_reasoner/
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>├──<span class="w"> </span>core/<span class="w">                   </span><span class="c1"># Core components</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>│<span class="w">   </span>├──<span class="w"> </span>network.py<span class="w">         </span><span class="c1"># QuantumBayesianNetwork</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>│<span class="w">   </span>├──<span class="w"> </span>nodes.py<span class="w">           </span><span class="c1"># Quantum/Classical/Hybrid nodes</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>│<span class="w">   </span>├──<span class="w"> </span>operators.py<span class="w">       </span><span class="c1"># Quantum operators and gates</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>│<span class="w">   </span>└──<span class="w"> </span>exceptions.py<span class="w">      </span><span class="c1"># Custom exceptions</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>├──<span class="w"> </span>inference/<span class="w">             </span><span class="c1"># Inference algorithms</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>│<span class="w">   </span>├──<span class="w"> </span>engine.py<span class="w">          </span><span class="c1"># Main inference coordinator</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>│<span class="w">   </span>├──<span class="w"> </span>belief_propagation.py<span class="w">  </span><span class="c1"># Quantum belief propagation</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>│<span class="w">   </span>├──<span class="w"> </span>causal.py<span class="w">          </span><span class="c1"># Do-calculus implementation</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>│<span class="w">   </span>└──<span class="w"> </span>variational.py<span class="w">     </span><span class="c1"># VQE and QAOA algorithms</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>├──<span class="w"> </span>backends/<span class="w">              </span><span class="c1"># Quantum backends</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>│<span class="w">   </span>├──<span class="w"> </span>simulator.py<span class="w">       </span><span class="c1"># Classical simulation</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>│<span class="w">   </span>├──<span class="w"> </span>qiskit_backend.py<span class="w">  </span><span class="c1"># IBM Quantum integration</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>│<span class="w">   </span>└──<span class="w"> </span>pennylane_backend.py<span class="w">  </span><span class="c1"># PennyLane integration</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>└──<span class="w"> </span>examples/<span class="w">              </span><span class="c1"># Practical examples</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="w">    </span>├──<span class="w"> </span>weather_mood.py<span class="w">    </span><span class="c1"># Hybrid causal reasoning</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">    </span>├──<span class="w"> </span>quantum_xor.py<span class="w">     </span><span class="c1"># Quantum logic reasoning</span>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="w">    </span>└──<span class="w"> </span>prisoners_dilemma.py<span class="w">  </span><span class="c1"># Quantum game theory</span>
 </span></code></pre></div>
 <h2 id="examples">📚 Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <h3 id="1-weather-mood-causal-analysis">1. Weather-Mood Causal Analysis<a class="headerlink" href="#1-weather-mood-causal-analysis" title="Permanent link">&para;</a></h3>
