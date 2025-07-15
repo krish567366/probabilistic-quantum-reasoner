@@ -1969,12 +1969,14 @@
 </span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">intervene</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">InferenceResult</span>
 </span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">measure_node</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">MeasurementResult</span>
 </span></code></pre></div>
-<p><strong>Key Features:</strong>
-- Graph structure management
-- Node lifecycle management<br />
-- Edge relationship tracking
-- Quantum entanglement coordination
-- Inference orchestration</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Graph structure management</li>
+<li>Node lifecycle management  </li>
+<li>Edge relationship tracking</li>
+<li>Quantum entanglement coordination</li>
+<li>Inference orchestration</li>
+</ul>
 <h3 id="node-types">Node Types<a class="headerlink" href="#node-types" title="Permanent link">&para;</a></h3>
 <h4 id="quantumnode">QuantumNode<a class="headerlink" href="#quantumnode" title="Permanent link">&para;</a></h4>
 <p>Represents quantum probabilistic variables:</p>
@@ -1993,11 +1995,13 @@
 </span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">measure</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">measurement</span><span class="p">:</span> <span class="n">MeasurementOperator</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">MeasurementResult</span>
 </span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_amplitudes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amplitudes</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </span></code></pre></div>
-<p><strong>Properties:</strong>
-- Complex amplitude vectors
-- Quantum superposition support
-- Unitary evolution capability
-- Measurement collapse behavior</p>
+<p><strong>Properties:</strong></p>
+<ul>
+<li>Complex amplitude vectors</li>
+<li>Quantum superposition support</li>
+<li>Unitary evolution capability</li>
+<li>Measurement collapse behavior</li>
+</ul>
 <h4 id="stochasticnode">StochasticNode<a class="headerlink" href="#stochasticnode" title="Permanent link">&para;</a></h4>
 <p>Classical probabilistic nodes:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">StochasticNode</span><span class="p">:</span>
@@ -2013,11 +2017,13 @@
 </span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_evidence</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">sample</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span>
 </span></code></pre></div>
-<p><strong>Properties:</strong>
-- Probability distributions
-- Conditional probability tables
-- Classical sampling
-- Evidence integration</p>
+<p><strong>Properties:</strong></p>
+<ul>
+<li>Probability distributions</li>
+<li>Conditional probability tables</li>
+<li>Classical sampling</li>
+<li>Evidence integration</li>
+</ul>
 <h4 id="hybridnode">HybridNode<a class="headerlink" href="#hybridnode" title="Permanent link">&para;</a></h4>
 <p>Quantum-classical hybrid nodes:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">HybridNode</span><span class="p">:</span>
@@ -2035,11 +2041,13 @@
 </span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
 </span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_hybrid_distribution</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="nb">float</span><span class="p">]</span>
 </span></code></pre></div>
-<p><strong>Properties:</strong>
-- Weighted quantum-classical mixing
-- Coherent superposition with decoherence
-- Flexible reasoning paradigms
-- Smooth classical limit</p>
+<p><strong>Properties:</strong></p>
+<ul>
+<li>Weighted quantum-classical mixing</li>
+<li>Coherent superposition with decoherence</li>
+<li>Flexible reasoning paradigms</li>
+<li>Smooth classical limit</li>
+</ul>
 <h3 id="quantum-state-management">Quantum State Management<a class="headerlink" href="#quantum-state-management" title="Permanent link">&para;</a></h3>
 <h4 id="quantumstate">QuantumState<a class="headerlink" href="#quantumstate" title="Permanent link">&para;</a></h4>
 <p>Core quantum state representation:</p>
@@ -2060,11 +2068,13 @@
 </span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">partial_trace</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">subsystem</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;QuantumState&#39;</span>
 </span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">fidelity</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="s1">&#39;QuantumState&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span>
 </span></code></pre></div>
-<p><strong>Features:</strong>
-- Amplitude normalization
-- Tensor product composition
-- Partial trace for subsystems
-- State fidelity computation</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Amplitude normalization</li>
+<li>Tensor product composition</li>
+<li>Partial trace for subsystems</li>
+<li>State fidelity computation</li>
+</ul>
 <h3 id="quantum-operators">Quantum Operators<a class="headerlink" href="#quantum-operators" title="Permanent link">&para;</a></h3>
 <h4 id="unitaryoperator">UnitaryOperator<a class="headerlink" href="#unitaryoperator" title="Permanent link">&para;</a></h4>
 <p>Quantum unitary transformations:</p>

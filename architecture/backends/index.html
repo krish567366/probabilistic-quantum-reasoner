@@ -1920,16 +1920,20 @@
 </span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>            <span class="s2">&quot;post_measurement_state&quot;</span><span class="p">:</span> <span class="n">post_state</span>
 </span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>        <span class="p">}</span>
 </span></code></pre></div>
-<p><strong>Features:</strong>
-- Perfect quantum simulation (no noise)
-- Efficient for small systems (&lt;20 qubits)
-- Deterministic with optional random seeding
-- Full quantum state access for debugging</p>
-<p><strong>Use Cases:</strong>
-- Algorithm development and testing
-- Educational demonstrations
-- Classical limit verification
-- Performance benchmarking</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Perfect quantum simulation (no noise)</li>
+<li>Efficient for small systems (&lt;20 qubits)</li>
+<li>Deterministic with optional random seeding</li>
+<li>Full quantum state access for debugging</li>
+</ul>
+<p><strong>Use Cases:</strong></p>
+<ul>
+<li>Algorithm development and testing</li>
+<li>Educational demonstrations</li>
+<li>Classical limit verification</li>
+<li>Performance benchmarking</li>
+</ul>
 <h3 id="qiskit-backend">Qiskit Backend<a class="headerlink" href="#qiskit-backend" title="Permanent link">&para;</a></h3>
 <p>Interface to IBM Quantum systems and simulators:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">probabilistic_quantum_reasoner.backends</span><span class="w"> </span><span class="kn">import</span> <span class="n">QiskitBackend</span>
@@ -2004,16 +2008,20 @@
 </span><span id="__span-2-70"><a id="__codelineno-2-70" name="__codelineno-2-70" href="#__codelineno-2-70"></a>            <span class="s2">&quot;shots&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">shots</span>
 </span><span id="__span-2-71"><a id="__codelineno-2-71" name="__codelineno-2-71" href="#__codelineno-2-71"></a>        <span class="p">}</span>
 </span></code></pre></div>
-<p><strong>Features:</strong>
-- Access to IBM Quantum hardware
-- Realistic noise models
-- Circuit optimization
-- Quantum error correction</p>
-<p><strong>Use Cases:</strong>
-- Real quantum hardware experiments
-- Noise-aware algorithm testing
-- Quantum advantage demonstrations
-- Research applications</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Access to IBM Quantum hardware</li>
+<li>Realistic noise models</li>
+<li>Circuit optimization</li>
+<li>Quantum error correction</li>
+</ul>
+<p><strong>Use Cases:</strong></p>
+<ul>
+<li>Real quantum hardware experiments</li>
+<li>Noise-aware algorithm testing</li>
+<li>Quantum advantage demonstrations</li>
+<li>Research applications</li>
+</ul>
 <h3 id="pennylane-backend">PennyLane Backend<a class="headerlink" href="#pennylane-backend" title="Permanent link">&para;</a></h3>
 <p>Optimized for variational quantum algorithms and machine learning:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">probabilistic_quantum_reasoner.backends</span><span class="w"> </span><span class="kn">import</span> <span class="n">PennyLaneBackend</span>
@@ -2100,35 +2108,45 @@
 </span><span id="__span-3-82"><a id="__codelineno-3-82" name="__codelineno-3-82" href="#__codelineno-3-82"></a>
 </span><span id="__span-3-83"><a id="__codelineno-3-83" name="__codelineno-3-83" href="#__codelineno-3-83"></a>        <span class="k">return</span> <span class="n">params</span>
 </span></code></pre></div>
-<p><strong>Features:</strong>
-- Automatic differentiation
-- Variational algorithm support
-- Multiple backend targets
-- Machine learning integration</p>
-<p><strong>Use Cases:</strong>
-- Variational quantum eigensolvers (VQE)
-- Quantum approximate optimization (QAOA)
-- Quantum machine learning
-- Hybrid classical-quantum optimization</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Automatic differentiation</li>
+<li>Variational algorithm support</li>
+<li>Multiple backend targets</li>
+<li>Machine learning integration</li>
+</ul>
+<p><strong>Use Cases:</strong></p>
+<ul>
+<li>Variational quantum eigensolvers (VQE)</li>
+<li>Quantum approximate optimization (QAOA)</li>
+<li>Quantum machine learning</li>
+<li>Hybrid classical-quantum optimization</li>
+</ul>
 <h2 id="backend-selection-guidelines">Backend Selection Guidelines<a class="headerlink" href="#backend-selection-guidelines" title="Permanent link">&para;</a></h2>
 <h3 id="development-phase">Development Phase<a class="headerlink" href="#development-phase" title="Permanent link">&para;</a></h3>
-<p>Use <code>ClassicalSimulator</code> for:
-- Algorithm prototyping
-- Unit testing
-- Educational examples
-- Performance benchmarking</p>
+<p>Use <code>ClassicalSimulator</code> for:</p>
+<ul>
+<li>Algorithm prototyping</li>
+<li>Unit testing</li>
+<li>Educational examples</li>
+<li>Performance benchmarking</li>
+</ul>
 <h3 id="research-phase">Research Phase<a class="headerlink" href="#research-phase" title="Permanent link">&para;</a></h3>
-<p>Use <code>QiskitBackend</code> for:
-- Hardware validation
-- Noise characterization
-- Quantum advantage studies
-- Publication-quality results</p>
+<p>Use <code>QiskitBackend</code> for:</p>
+<ul>
+<li>Hardware validation</li>
+<li>Noise characterization</li>
+<li>Quantum advantage studies</li>
+<li>Publication-quality results</li>
+</ul>
 <h3 id="machine-learning">Machine Learning<a class="headerlink" href="#machine-learning" title="Permanent link">&para;</a></h3>
-<p>Use <code>PennyLaneBackend</code> for:
-- Variational algorithms
-- Parameter optimization
-- Hybrid models
-- Gradient-based learning</p>
+<p>Use <code>PennyLaneBackend</code> for:</p>
+<ul>
+<li>Variational algorithms</li>
+<li>Parameter optimization</li>
+<li>Hybrid models</li>
+<li>Gradient-based learning</li>
+</ul>
 <h2 id="configuration-examples">Configuration Examples<a class="headerlink" href="#configuration-examples" title="Permanent link">&para;</a></h2>
 <h3 id="local-development">Local Development<a class="headerlink" href="#local-development" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Classical simulation for development</span>
