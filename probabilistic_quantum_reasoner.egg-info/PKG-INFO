@@ -1,3 +1,66 @@
+Metadata-Version: 2.4
+Name: probabilistic-quantum-reasoner
+Version: 1.0.0
+Summary: A quantum-classical hybrid reasoning engine for uncertainty-aware AI inference
+Home-page: https://github.com/quantum-ai/probabilistic-quantum-reasoner
+Author: Quantum AI Research Team
+Author-email: Krishna Bajpai <bajpaikrishna715@gmail.com>
+Maintainer-email: Krishna Bajpai <bajpaikrishna715@gmail.com>
+License: COmmercial
+Project-URL: Homepage, https://github.com/krish567366/probabilistic-quantum-reasoner
+Project-URL: Documentation, https://krish567366.github.io/probabilistic-quantum-reasoner/
+Project-URL: Repository, https://github.com/krish567366/probabilistic-quantum-reasoner
+Project-URL: Bug Tracker, https://github.com/krish567366/probabilistic-quantum-reasoner/issues
+Keywords: quantum,bayesian,reasoning,AI,inference,probabilistic,causal,uncertainty,quantum-computing
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: license_info.py
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: scipy>=1.7.0
+Requires-Dist: networkx>=2.6.0
+Requires-Dist: qiskit>=0.45.0
+Requires-Dist: pennylane>=0.32.0
+Requires-Dist: matplotlib>=3.5.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: sympy>=1.9.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: typing-extensions>=4.0.0
+Requires-Dist: quantummeta-license>=1.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: black>=22.0.0; extra == "dev"
+Requires-Dist: isort>=5.10.0; extra == "dev"
+Requires-Dist: flake8>=5.0.0; extra == "dev"
+Requires-Dist: mypy>=0.991; extra == "dev"
+Requires-Dist: pre-commit>=2.20.0; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: mkdocs>=1.4.0; extra == "docs"
+Requires-Dist: mkdocs-material>=8.5.0; extra == "docs"
+Requires-Dist: mkdocstrings[python]>=0.19.0; extra == "docs"
+Requires-Dist: mkdocs-jupyter>=0.22.0; extra == "docs"
+Provides-Extra: extras
+Requires-Dist: jax>=0.4.0; extra == "extras"
+Requires-Dist: optax>=0.1.4; extra == "extras"
+Requires-Dist: torch>=1.12.0; extra == "extras"
+Requires-Dist: plotly>=5.10.0; extra == "extras"
+Requires-Dist: ipywidgets>=8.0.0; extra == "extras"
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
 # Probabilistic Quantum Reasoner
 
 [![PyPI](https://img.shields.io/pypi/v/probabilistic-quantum-reasoner.svg?label=PyPI&color=purple&logo=python&logoColor=white)](https://pypi.org/project/probabilistic-quantum-reasoner/)

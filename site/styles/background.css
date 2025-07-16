@@ -1,0 +1,51 @@
+/* === Full page background === */
+body {
+  background-color: #FFF8E1; /* Light warm yellow */
+}
+
+/* Remove white from content container */
+.md-container,
+.md-main__inner,
+.md-content,
+.md-typeset {
+  background-color: transparent !important;
+}
+
+/* Header */
+.md-header,
+.md-tabs {
+  background-color: #3F51B5 !important; /* Indigo */
+  color: white;
+}
+
+/* Accent elements */
+.md-typeset a,
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: #FFC107 !important; /* Amber */
+}
+
+/* Code blocks */
+.md-typeset code,
+.md-typeset pre {
+  background-color: #fff3cd !important;
+  border-radius: 5px;
+  color: #2e2e2e;
+}
+
+/* Admonitions (notes, tips, warnings) */
+.md-typeset .admonition,
+.md-typeset details {
+  background-color: #FFF3E0 !important;
+  border-left: 4px solid #FFC107;
+}
+
+.md-typeset .admonition-title {
+  color: #3F51B5;
+}
+
+/* Footer */
+.md-footer {
+  background-color: #3F51B5 !important;
+  color: white;
+}

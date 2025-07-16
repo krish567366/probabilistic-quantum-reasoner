@@ -1,0 +1,122 @@
+site_name: Probabilistic Quantum Reasoner
+site_description: A quantum-classical hybrid reasoning engine for uncertainty-aware AI inference
+site_author: Quantum AI Research Team
+site_url: https://quantum-reasoner.readthedocs.io
+
+repo_name: probabilistic-quantum-reasoner
+repo_url: https://github.com/quantum-ai/probabilistic-quantum-reasoner
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: cyan
+      accent: lime
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+  extra_css:
+  - styles/background.css
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quickstart.md
+    - Basic Examples: getting-started/examples.md
+  - Architecture:
+    - Overview: architecture/overview.md
+    - Core Components: architecture/core.md
+    - Quantum Backends: architecture/backends.md
+    - Inference Engines: architecture/inference.md
+  - User Guide:
+    - Building Networks: guide/networks.md
+    - Quantum Nodes: guide/quantum-nodes.md
+    - Inference Methods: guide/inference.md
+    - Causal Reasoning: guide/causal.md
+    - Variational Methods: guide/variational.md
+  - Examples:
+    - Weather Prediction: examples/weather-mood.md
+    - Quantum Logic: examples/quantum-xor.md
+    - Game Theory: examples/prisoners-dilemma.md
+  - API Reference:
+    - Core: api/core.md
+    - Inference: api/inference.md
+    - Backends: api/backends.md
+    - Examples: api/examples.md
+  - Advanced Topics:
+    - Quantum Entanglement: advanced/entanglement.md
+    - Custom Backends: advanced/custom-backends.md
+    - Performance Optimization: advanced/optimization.md
+  - Contributing:
+    - Development Setup: contributing/setup.md
+    - Testing: contributing/testing.md
+    - Documentation: contributing/docs.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: false
+            show_root_heading: true
+            show_root_toc_entry: false
+            merge_init_into_class: true
+  - autorefs
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/quantum-ai/probabilistic-quantum-reasoner
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/probabilistic-quantum-reasoner/
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
