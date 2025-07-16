@@ -1,2 +1,6 @@
 probabilistic_quantum_reasoner/
 tests/
+docs/
+.gitignore
+dist/
+test*.py
